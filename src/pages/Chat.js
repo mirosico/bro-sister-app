@@ -23,6 +23,9 @@ export default class Chat extends Component {
     this.handleSubmitSIS = this.handleSubmitSIS.bind(this);
     this.myRef = React.createRef();
   }
+  async componentDidUpdate() {
+
+  }
 
   async componentDidMount() {
     this.setState({ readError: null, loadingChats: true });
@@ -49,6 +52,13 @@ export default class Chat extends Component {
     }
   }
 
+  async componentDidUpdate(prevProps, prevState) {
+    if (prevState.chats.length !== this.state.length) {
+      const  lastBro = this.state.chats.filter(ch =>  ch.content === "BRO!!!" ).slice(-1)[0];
+      const lastSis = this.state.chats.filter(ch =>  ch.content === "SIS!!!" ).slice(-1)[0];
+      this.setState({lastBro, lastSis } )
+    }
+  }
 
 
   async handleSubmitBRO(event) {
@@ -80,6 +90,7 @@ export default class Chat extends Component {
         email: this.state.user.email
       });
       this.setState({ content: '' });
+
       chatArea.scrollBy(0, chatArea.scrollHeight);
     } catch (error) {
       this.setState({ writeError: error.message });

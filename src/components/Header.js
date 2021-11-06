@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-sm fixed-top navbar-light my-bg">
-        <Link className="navbar-brand" to="/">myBroSis</Link>
+        <Link className="navbar-brand" to="/">webrosis</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
