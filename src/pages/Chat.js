@@ -57,6 +57,7 @@ export default class Chat extends Component {
       const  lastBro = this.state.chats.filter(ch =>  ch.content === "BRO!!!" ).slice(-1)[0];
       const lastSis = this.state.chats.filter(ch =>  ch.content === "SIS!!!" ).slice(-1)[0];
       this.setState({lastBro, lastSis } )
+      console.log("DID UPDATE")
     }
   }
 
