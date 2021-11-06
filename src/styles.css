@@ -11,14 +11,35 @@ body {
 .my-bg {
   background-color: #b1c5b9;
 }
-.chat-area {
-  margin-top: 0px;
+.chat-area{
+  margin-top: 0;
   padding: 5px;
   display: inline-flex;
   width: 100%;
+
+}
+.chat-area p{
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
 }
 .total-bro-sis {
-  margin-top: 100px;
   width: max-content;
   margin: 100px auto;
 }
@@ -70,7 +91,7 @@ body {
 }
 footer {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
 }
 .blue {
@@ -94,5 +115,5 @@ footer {
   }
 }
 .no-top-margin {
-  margin-top: 0px
+  margin-top: 0
 }
