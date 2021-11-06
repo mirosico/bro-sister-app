@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #dcf9e7;
+}
+
+.chat-area, .home {
+  margin-top: 60px;
+}
+.my-bg {
+  background-color: #b1c5b9;
+}
+.chat-area {
+  margin-top: 0px;
+  padding: 5px;
+  display: inline-flex;
+  width: 100%;
+}
+.total-bro-sis {
+  margin-top: 100px;
+  width: max-content;
+  margin: 100px auto;
+}
+.chat-area .chat-bubble {
+  background-color: #bbdefb;
+  padding: 1px 10px;
+  border-radius: 4px;
+  width: max-content;
+  text-align: center;
+  word-wrap: normal;
+  margin: 0 auto;
+}
+
+.chat-bubble .chat-time {
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+  text-align: center;
+  min-width: 100%;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  background-color: #a5d6a7;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 10px;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+.btn-submit {
+  background-color: #2e7d32;
+  color: white;
+  margin: 0 auto!important;
+  width: 30%;
+  font-size: 2rem;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.blue {
+  background-color: #24a381;
+}
+.pink {
+  background-color: #cb66ee
+}
+.red {
+  background-color: #d42b2b;
+}
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+  .btn-submit {
+    width: auto;
+  }
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
+.no-top-margin {
+  margin-top: 0px
+}
