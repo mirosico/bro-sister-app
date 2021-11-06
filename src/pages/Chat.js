@@ -53,7 +53,7 @@ export default class Chat extends Component {
   }
 
   async componentDidUpdate(prevProps, prevState) {
-    if (prevState.chats.length !== this.state.length) {
+    if (prevState.chats.length !== this.state.chats.length) {
       const  lastBro = this.state.chats.filter(ch =>  ch.content === "BRO!!!" ).slice(-1)[0];
       const lastSis = this.state.chats.filter(ch =>  ch.content === "SIS!!!" ).slice(-1)[0];
       this.setState({lastBro, lastSis } )
